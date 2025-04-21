@@ -13,13 +13,7 @@ import theme from '../../../styles/theme'
 import * as S from './styles'
 import { Container } from '../../Container'
 
-
-interface HeroProps {
-  title: string
-  subtitle: string
-}
-
-export function Hero({ title, subtitle }: HeroProps) {
+export function Hero() {
   const [formularioenviado, setFormularioEnviado] = useState(false)
   const { onBlur, value, onChange, error } = useForm()
 

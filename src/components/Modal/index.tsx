@@ -1,15 +1,14 @@
-import { Dispatch, SetStateAction } from 'react'
 import Image from 'next/image'
+import { Dispatch, SetStateAction } from 'react'
 
-import IconClose from '/public/image/close.svg'
-import * as S from './styles'
-import { Props } from '../Portfolio'
-import { LinkButton } from '../UI/Button'
 import theme from '../../styles/theme'
+import { LinkButton } from '../UI/Button'
+import * as S from './styles'
+import IconClose from '/public/image/close.svg'
 
 interface ModalProps {
   infoModal: any
-  setInfoModal: Dispatch<SetStateAction<null | Props>>
+  setInfoModal: Dispatch<SetStateAction<null | any>>
 }
 
 export function Modal({ setInfoModal, infoModal }: ModalProps) {
